@@ -11,8 +11,7 @@ if( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) ){
 		$subject = 'Nowa wiadomość';
 		$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 		$sent = email($to, $email, $name, $subject, $message);
-        
-        echo $sent;
+     
         if ($sent) {
 			echo 'Wiadomość wysłana!';
 		} else {
