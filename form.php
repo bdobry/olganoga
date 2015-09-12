@@ -17,13 +17,6 @@ if( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) ){
 			echo 'Wiadomość wysłana!';
 		} else {
 			echo 'Wystąpił błąd podczas wysyłania';
-            echo "Do ".$to."<br />";
-            echo "Imie: ".$name."<br />";
-            echo "Email: ".$email."<br />";
-            echo "Numer ".$phone."<br />";
-            echo "Temat: ".$subject."<br />";
-            echo "Wiadomość: ".$message."<br />";
-            echo "Sent: ".$sent."<br />";
 		}
 	}
 	else {
